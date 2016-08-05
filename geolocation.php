@@ -32,9 +32,9 @@ if ($_GET['lng']) {
 
     }
 
-    // echo $country;
+    // If need other countries: BS, BZ, KY, PW
 
-    if ($country == "US" || $country == "BS" || $country = "BZ" || $country == "KY" || $country == "PW") {
+    if ($country == "US") {
         $units = "imperial";
     } else {
         $units = "metric";
