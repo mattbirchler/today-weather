@@ -1,0 +1,402 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans", Source Sans Pro, -apple-system, sans-serif;
+  font-weight: 700;
+  max-width: 100%;
+  color: #eee;
+  background-color: #051128; }
+
+a {
+  color: #eee;
+  transition: 200ms; }
+  a:hover {
+    color: #b53b3b; }
+
+.banner {
+  font-family: Oswald;
+  font-size: 3em;
+  background-color: #b53b3b;
+  text-align: center;
+  padding: 0.2em 0 0.2em 0; }
+  .banner a {
+    text-decoration: none;
+    color: #eee; }
+
+#findMe {
+  position: absolute;
+  padding: 8px 5px 8px 5px;
+  right: 0px;
+  top: 18px;
+  border-radius: 10px 0 0 10px;
+  transition: 500ms;
+  display: flex; }
+  #findMe img {
+    display: inline-block;
+    max-height: 40px;
+    margin: auto;
+    background-color: transparent; }
+  #findMe span {
+    margin: auto; }
+  #findMe:hover {
+    background-color: #051128;
+    cursor: pointer; }
+
+.sub_banner {
+  font-family: Oswald;
+  font-size: 2.4em; }
+
+.sub_heading {
+  padding-left: 1em; }
+
+#currently {
+  background-color: #b53b3b; }
+
+#hour_24 {
+  background-color: #c67272; }
+
+#data_container {
+  display: flex;
+  justify-content: center; }
+
+#now_container {
+  /*background-color: rgba(93, 199, 132, 0.31); */
+  width: 40%; }
+
+#highLow {
+  text-align: center;
+  font-size: 1.4em;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 0px; }
+
+.alert {
+  text-align: center;
+  font-family: monospace;
+  padding: 0.4em 0 0.4em 0;
+  font-size: 1.1em;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: black; }
+
+#alert_title {
+  max-width: 90%; }
+
+#alert_button {
+  font-style: italic;
+  text-decoration: underline;
+  font-weight: 300; }
+
+#alert_message {
+  font-weight: 300;
+  padding: 0 1em 0 1em; }
+  #alert_message a {
+    color: #b53b3b; }
+
+.hide_alert {
+  display: none; }
+
+.next_hour_rain_hide {
+  display: none; }
+
+.next_hour_rain_container {
+  /*background-color: $primary-color; */
+  margin-bottom: 2em;
+  color: #4bc0c0; }
+
+.rain_banner {
+  font-family: Oswald;
+  font-size: 1.4em;
+  text-align: center;
+  padding: 0 0 0.2em 0; }
+
+.next_hour_block {
+  text-align: center;
+  font-size: 1.3em; }
+
+.current_container {
+  margin-bottom: 1em; }
+
+#datetime {
+  text-align: center;
+  font-style: italic;
+  margin-top: 0.6em;
+  font-size: 1.3em;
+  color: #d2d2d2; }
+
+.top_current {
+  display: flex;
+  justify-content: center;
+  margin-top: 1em; }
+
+.current_icon {
+  width: 130px; }
+
+.top_current_right {
+  padding-left: 1em; }
+
+#temp {
+  font-size: 4em; }
+
+#conditions {
+  font-size: 2em; }
+
+.current_summary {
+  margin-top: 1em;
+  text-align: center;
+  font-size: 2em; }
+
+.current_details {
+  font-size: 1.4em;
+  width: 13em;
+  display: block;
+  margin: auto; }
+
+.condition_label {
+  font-weight: 500;
+  width: 8em; }
+
+.hour_24_container {
+  /*background-color: rgba(199, 102, 94, 0.31); */
+  width: 60%; }
+
+.twentyfour_hour_hour {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.hour_icon {
+  height: 64px;
+  width: 64px; }
+
+#details {
+  display: none; }
+
+.hour_temp {
+  padding-bottom: 1em; }
+
+.hour_summary {
+  flex-basis: auto;
+  background-color: #dbdbdb;
+  width: 6em;
+  margin: 0.5em 0.2em 0 0.5em;
+  text-align: center;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  border-radius: 3px;
+  color: black; }
+
+.inline_ad {
+  margin-top: 1em; }
+
+#myDiv {
+  display: none; }
+
+.search {
+  margin: 1em auto 1em auto; }
+
+#geolocationHTML {
+  display: none; }
+
+input {
+  font-size: 1.4em; }
+
+#search_term {
+  display: block;
+  margin: auto;
+  width: 20em;
+  max-width: 100%;
+  text-align: center;
+  background-color: #051128;
+  border-radius: 50px;
+  border-width: 1px;
+  border-color: #646464;
+  border-style: solid;
+  color: white; }
+  #search_term:focus {
+    border-color: #ad3737;
+    outline: none;
+    color: white; }
+
+.daily_chart {
+  display: block;
+  margin: 2em auto auto auto;
+  width: 800px;
+  max-width: 95%; }
+
+#summey24 {
+  font-size: 1.7em;
+  text-align: center;
+  margin: 0.2em 0 0 0; }
+
+.week_view {
+  margin-top: 2em; }
+
+.weekly_chart {
+  display: block;
+  margin: auto;
+  max-width: 900px; }
+  .weekly_chart canvas {
+    margin-top: 2em; }
+
+footer {
+  text-align: center;
+  margin-bottom: 3em; }
+
+.footer_link {
+  color: white; }
+
+.about_content {
+  max-width: 700px;
+  margin: auto;
+  font-weight: normal;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 0 20px 10px 20px;
+  border-radius: 10px;
+  margin-bottom: 3em;
+  font-size: 1em; }
+  .about_content strong {
+    font-size: 1.3em; }
+  .about_content h1 {
+    text-align: center;
+    background-color: #b53b3b;
+    margin-left: -20px;
+    margin-right: -20px;
+    width: inherit;
+    border-radius: 10px 10px 0 0; }
+  .about_content code {
+    background-color: rgba(0, 0, 0, 0.54);
+    padding: 2px 4px 2px 4px;
+    font-size: 1.2em;
+    border-radius: 3px; }
+  .about_content pre {
+    background-color: rgba(0, 0, 0, 0.54);
+    font-size: 1.2em;
+    word-wrap: break-word;
+    padding: 5px;
+    border-radius: 3px; }
+  .about_content hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0)); }
+
+/*
+ *REPSPONSIVE */
+@media only screen and (max-width: 45em) {
+  .banner {
+    font-size: 2em; }
+
+  .sub_banner {
+    font-size: 1.9em;
+    text-align: center; }
+
+  .sub_heading {
+    padding-left: 0em; }
+
+  #datetime {
+    font-size: 1.1em; }
+
+  #data_container {
+    display: block; }
+
+  #now_container {
+    width: 100%; }
+
+  #datetime {
+    margin-top: 1px; }
+
+  .top_current {
+    margin-top: 0px; }
+
+  .climacon {
+    width: 120px;
+    height: 120px; }
+
+  .hour_24_container {
+    width: 100%;
+    margin-top: 2em; }
+
+  #hour_24 {
+    background-color: #b53b3b; }
+
+  #conditions {
+    font-size: 1.5em; }
+
+  #details {
+    display: block;
+    margin: auto;
+    margin-top: 1em;
+    max-width: 10em;
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: 300;
+    font-style: italic;
+    border: 1px solid white;
+    border-radius: 50px;
+    padding: 0.1em; }
+
+  #temp {
+    font-size: 3em; }
+
+  .current_summary {
+    margin-top: 0;
+    font-size: 1.5em; }
+
+  .show_details {
+    display: none; } }
+@media only screen and (max-width: 35em) {
+  #weekly_temp {
+    width: 400px;
+    height: 400px; }
+
+  #findMe {
+    top: 5px; }
+    #findMe:hover {
+      background-color: none; } }
+@media only screen and (max-width: 400px) {
+  .banner {
+    text-align: left; }
+    .banner a {
+      padding-left: 5px; }
+
+  .faq {
+    text-align: center;
+    padding-left: 0px; }
+
+  #findMe {
+    top: 4px; }
+    #findMe:hover {
+      background-color: none; }
+
+  .sub_banner {
+    font-size: 1.6em; }
+
+  #search_term {
+    font-size: 1.1em;
+    max-width: 90%; }
+
+  #alert_title {
+    max-width: 90%; }
+
+  .climacon {
+    width: 110px;
+    height: 110px; }
+
+  #temp {
+    font-size: 2.5em; }
+
+  #conditions {
+    font-size: 1.3em; }
+
+  #highLow {
+    font-size: 1.3em; }
+
+  .current_summary {
+    font-size: 1.3em; }
+
+  .current_details {
+    font-size: 1.3em; }
+
+  #summey24 {
+    font-size: 1.3em; } }
+
+/*# sourceMappingURL=style.css.map */
