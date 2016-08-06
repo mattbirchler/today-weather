@@ -34,7 +34,7 @@ if ($_GET['lng']) {
 
     // If need other countries: BS, BZ, KY, PW
 
-    if ($country == "US") {
+    if ($country == "US" || $country == "BS" || $country == "BZ" || $country == "KY" || $country == "PW") {
         $units = "imperial";
     } else {
         $units = "metric";
@@ -74,7 +74,7 @@ elseif( empty( $_POST['address']) && empty($_GET['lng']) ) {
 
     }
 
-    if ($country == "US") {
+    if ($country == "US" || $country == "BS" || $country == "BZ" || $country == "KY" || $country == "PW") {
         $units = "imperial";
     } else {
         $units = "metric";
@@ -116,7 +116,7 @@ elseif ( !empty($_POST['address']) && empty($_GET['lng']) ) {
 
     }
 
-    if ($country == "US") {
+    if ($country == "US" || $country == "BS" || $country == "BZ" || $country == "KY" || $country == "PW") {
         $units = "imperial";
     } else {
         $units = "metric";
